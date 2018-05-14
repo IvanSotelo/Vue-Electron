@@ -184,7 +184,7 @@ module.exports = {
       let output = ''
       let dependencies = {
         'axios': '^0.18.0',
-        'vue-electron': '^1.0.6',
+        'vue-electron': '^2.0.0',
         'vue-router': '^3.0.1',
         'vuex': '^3.0.1'
       }
@@ -228,10 +228,10 @@ module.exports = {
         'All set. Welcome to your new electron-vue project!',
         '',
         `Next Steps:\n${!data.inPlace ? '\n  \x1b[34m$\x1b[0m cd ' + data.destDirName : ''}`,
-        '  \x1b[34m$\x1b[0m npm install',
-        '  \x1b[34m$\x1b[0m npm run dev',
+        '  \x1b[34m$\x1b[34m npm install',
+        '  \x1b[34m$\x1b[34m npm run dev',
         '',
-        'Created by Ivan Sotelo',
+        '\x1b[34m Created by Ivan Sotelo',
         '',
       ].join('\n'))
     }, () => {
