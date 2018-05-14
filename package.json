@@ -1,0 +1,29 @@
+{
+  "name": "Vue-Electron",
+  "version": "1.0.0",
+  "description": "An Electron & Vue.js quick start boilerplate with vue-cli support",
+  "main": "meta.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanSotelo/Vue-Electron.git"
+  },
+  "keywords": [
+    "electron",
+    "vue",
+    "boilerplate",
+    "hot",
+    "reload",
+    "router",
+    "vuex",
+    "resource"
+  ],
+  "author": "Ivan Sotelo <ivan-.-sotelo@hotmail.com> (https://github.com/IvanSotelo)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IvanSotelo/Vue-Electron/issues"
+  },
+  "homepage": "https://github.com/IvanSotelo/Vue-Electron#readme",
+  "devDependencies": {
+    "suppose": "^0.6.1"
+  }
+}
