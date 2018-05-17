@@ -141,23 +141,6 @@ module.exports = {
       message: 'Set up end-to-end testing?',
       require: true
     },
-    e2eConfig: {
-      when: 'e2e',
-      type: 'list',
-      message: 'What end-to-end testing solution would you like to use?',
-      choices: [
-        {
-          name: 'Cypress (Chrome Only)',
-          value: 'cypress',
-          short: 'Cypress'
-        },
-        {
-          name: 'Nightwatch (Selenium-based)',
-          value: 'nightwatch',
-          short: 'Nightwatch'
-        }
-      ]
-    },
     builder: {
       type: 'list',
       message: 'What build tool would you like to use?',
@@ -184,7 +167,7 @@ module.exports = {
       let output = ''
       let dependencies = {
         'axios': '^0.18.0',
-        'vue-electron': '^2.0.0',
+        'vue-electron': '1.0.6',
         'vue-router': '^3.0.1',
         'vuex': '^3.0.1'
       }
@@ -209,8 +192,13 @@ module.exports = {
     'src/renderer/components/LandingPageView/CurrentPage.vue': 'plugins[\'vue-router\']',
     'src/renderer/router/**/*': 'plugins[\'vue-router\']',
     'src/renderer/store/**/*': 'plugins[\'vuex\']',
+    'src/renderer/style/**/*': 'cssConfig === \'scss\''
     'test/e2e/**/*': 'e2e',
-    'test/unit/**/*': 'unit',
+    'test/unit/specs/**/*': 'unit',
+    'test/unit/jest.conf.js': 'unitConfig === \'jest\'',
+    'test/unit/setup.js': 'unitConfig === \'jest\'',
+    'test/unit/karma.conf.js': 'unitConfig === \'mocha\'',
+    'test/unit/index.js': 'unitConfig === \'mocha\'',
     '.electron-vue/build.config.js': 'builder === \'packager\'',
     'test/.eslintrc': 'e2e || unit',
     '.eslintignore': 'eslint',
@@ -227,11 +215,11 @@ module.exports = {
         '',
         'All set. Welcome to your new electron-vue project!',
         '',
-        `Next Steps:\n${!data.inPlace ? '\n  \x1b[34m$\x1b[0m cd ' + data.destDirName : ''}`,
-        '  \x1b[34m$\x1b[34m npm install',
-        '  \x1b[34m$\x1b[34m npm run dev',
+        `Next Steps:\n${!data.inPlace ? '\n  \x1b[36m$\x1b[33m cd ' + data.destDirName : ''}`,
+        '  \x1b[36m$\x1b[33m npm install\x1b[0m',
+        '  \x1b[36m$\x1b[33m npm run dev\x1b[0m',
         '',
-        '\x1b[34m Created by Ivan Sotelo',
+        '\x1b[36m Created by Ivan Sotelo \x1b[0m',
         '',
       ].join('\n'))
     }, () => {

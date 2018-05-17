@@ -23,11 +23,7 @@
     "build:web": "cross-env BUILD_TARGET=web node .electron-vue/build.js",
     "dev": "node .electron-vue/dev-runner.js",
     {{#if e2e}}
-    {{#if_eq e2eConfig 'nightwatch'}}
-    "e2e": "node test/e2e/runner.js",
-    {{else}}
     "e2e": "npm run pack && mocha test/e2e",
-    {{/if_eq}}
     {{/if}}
     {{#if eslint}}
     "lint": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter src{{#testing unit e2e}} test{{/testing}}",
@@ -110,6 +106,8 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-plugin-transform-vue-jsx": "^3.5.0",
     "babel-preset-env": "^1.6.0",
+    "babel-preset-minify": "^0.4.2",
+    "babel-minify":"^0.4.2",
     "babel-preset-stage-2": "^6.22.0",
     "babel-register": "^6.22.0",
     "babili-webpack-plugin": "^0.1.2",
@@ -182,12 +180,8 @@
     {{/if_eq}}
     {{/if}}
     {{#if e2e}}
-    {{#if_eq unitConfig 'cypress'}}
     "require-dir": "^0.3.0",
     "spectron": "^3.7.1",
-    {{else}}
-    "nightwatch": "^0.9.12",
-    {{/if_eq}}
     {{/if}}
     {{#testing unit e2e}}
     "babel-plugin-istanbul": "^4.1.1",

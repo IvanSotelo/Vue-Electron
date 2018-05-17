@@ -18,9 +18,12 @@ module.exports = {
     __static: true
   },
   plugins: [
-    'html'
+    'html',
+    'vue',
+    'promise'
   ],
   'rules': {
+    'strict': 0,
     {{#if_eq eslintConfig 'standard'}}
     // allow paren-less arrow functions
     'arrow-parens': 0,

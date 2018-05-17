@@ -43,6 +43,7 @@ install:
 script:
 {{#unit}}
 #- xvfb-maybe node_modules/.bin/karma start test/unit/karma.conf.js
+- npm run unit
 {{/unit}}
 {{#e2e}}
 #- yarn run pack && xvfb-maybe node_modules/.bin/mocha test/e2e

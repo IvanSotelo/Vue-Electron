@@ -25,6 +25,12 @@
   }
 </script>
 
+{{#if_eq cssConfig 'scss'}}
+<style lang="scss">
+  /* CSS */
+</style>
+{{else}}
 <style>
   /* CSS */
 </style>
+{{{{/if_eq}}}}

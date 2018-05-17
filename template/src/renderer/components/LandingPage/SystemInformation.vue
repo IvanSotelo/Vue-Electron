@@ -51,6 +51,32 @@
   }
 </script>
 
+{{#if_eq cssConfig 'scss'}}
+<style scoped lang="scss">
+  .title {
+    color: #888;
+    font-size: 18px;
+    font-weight: initial;
+    letter-spacing: .25px;
+    margin-top: 10px;
+  }
+
+  .items { margin-top: 8px; }
+
+  .item {
+    display: flex;
+    margin-bottom: 6px;
+    .name{
+      color: #6a6a6a;
+      margin-right: 6px;
+    }
+    .value{
+      color: #35495e;
+      font-weight: bold;
+    }
+  }
+</style>
+{{else}}
 <style scoped>
   .title {
     color: #888;
@@ -77,3 +103,4 @@
     font-weight: bold;
   }
 </style>
+{{{{/if_eq}}}}
