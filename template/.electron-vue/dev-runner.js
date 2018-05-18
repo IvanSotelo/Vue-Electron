@@ -150,12 +150,12 @@ function greeting () {
   let text = ''
 
   if (cols > 104) text = 'Ivan-Sotelo'
-  else if (cols > 76) text = 'Ivan-Sotelo'
+  else if (cols > 76) text = 'Ivan-|Sotelo'
   else text = false
 
   if (text) {
     say(text, {
-      colors: ['yellow'],
+      colors: ['cyan'],
       font: 'simple3d',
       space: false
     })

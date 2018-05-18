@@ -121,7 +121,7 @@
     "del": "^3.0.0",
     "devtron": "^1.4.0",
     "electron": "^2.0.0",
-    "electron-debug": "^2.1.2",
+    "electron-debug": "^1.5.0",
     "electron-devtools-installer": "^2.2.4",
     {{#css}}
     {{#if_eq cssConfig 'scss'}}
@@ -143,11 +143,11 @@
     "eslint-loader": "^1.9.0",
     "eslint-plugin-html": "^3.1.1",
     "eslint-plugin-vue": "^4.0.0",
+    "eslint-plugin-promise": "^3.7.0",
     {{#if_eq eslintConfig 'standard'}}
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-standard": "^3.0.1",
     {{/if_eq}}
     {{#if_eq eslintConfig 'airbnb'}}
