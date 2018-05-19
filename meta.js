@@ -68,7 +68,7 @@ module.exports = {
       type: 'confirm',
       message: 'Set up Css pre-processor?',
       require: true,
-      default: false
+      default: true
     },
     cssConfig: {
       when: 'css',
@@ -119,7 +119,7 @@ module.exports = {
       type: 'confirm',
       message: 'Set up unit testing?',
       required: true,
-      default: false
+      default: true
     },
     unitConfig: {
       when: 'unit',
