@@ -19,8 +19,7 @@ module.exports = {
   },
   plugins: [
     'html',
-    'vue',
-    'promise'
+    'vue'
   ],
   'rules': {
     'strict': 0,
