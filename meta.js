@@ -194,7 +194,7 @@ module.exports = {
     'src/renderer/components/LandingPageView/CurrentPage.vue': 'plugins[\'vue-router\']',
     'src/renderer/router/**/*': 'plugins[\'vue-router\']',
     'src/renderer/store/**/*': 'plugins[\'vuex\']',
-    'src/renderer/style/**/*': 'cssConfig[\'scss\']',
+    'src/renderer/style/**/*': 'css',
     'test/e2e/**/*': 'e2e',
     'test/unit/specs/**/*': 'unit',
     'test/unit/jest.conf.js': 'unitConfig[\'jest\']',
