@@ -1,6 +1,6 @@
 {
-  "env": {{{#if unit}}{{#if_eq unitConfig 'mocha'}}
-    "mocha": true,{{else}}"jest": true,{{/if_eq}}{{/if}}
+  "env": {
+    {{#if unit}}{{#if_eq unitConfig 'mocha'}}"mocha": true,{{else}}"jest": true,{{/if_eq}}{{/if}}
   },
   "globals": {
     "assert": true,
