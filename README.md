@@ -1,16 +1,16 @@
-# Vue-boilerplate
+# Vue-Electron
 
 > VueJs Boilerplate
 
-[![Build Status](https://travis-ci.org/IvanSotelo/vue-boilerplate.svg?branch=master)](https://travis-ci.org/IvanSotelo/vue-boilerplate)
+[![Build Status](https://travis-ci.org/IvanSotelo/Vue-Electron.svg?branch=master)](https://travis-ci.org/IvanSotelo/Vue-Electron)
   <a target="_blank" href="https://www.paypal.me/IvanSotelo" title="Donate using PayPal"><img src="https://img.shields.io/badge/paypal-donate-brightgreen.svg" /></a>
-  [![devDependency Status](https://david-dm.org/IvanSotelo/vue-boilerplate.svg)](https://david-dm.org/IvanSotelo/vue-boilerplate?type=dev)
+  [![devDependency Status](https://david-dm.org/IvanSotelo/Vue-Electron.svg)](https://david-dm.org/IvanSotelo/Vue-Electron?type=dev)
 
 ## Releases:
 
 #### Current release: 1.0.0.
 
-You can see all the library releases [here](https://github.com/IvanSotelo/vue-boilerplate/releases).
+You can see all the library releases [here](https://github.com/IvanSotelo/Vue-Electron/releases).
 
 ---
 
