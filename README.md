@@ -1,10 +1,7 @@
 # Vue-Electron
 
 > VueJs Boilerplate
-
-[![Build Status](https://travis-ci.org/IvanSotelo/Vue-Electron.svg?branch=master)](https://travis-ci.org/IvanSotelo/Vue-Electron)
   <a target="_blank" href="https://www.paypal.me/IvanSotelo" title="Donate using PayPal"><img src="https://img.shields.io/badge/paypal-donate-brightgreen.svg" /></a>
-  [![devDependency Status](https://david-dm.org/IvanSotelo/Vue-Electron.svg)](https://david-dm.org/IvanSotelo/Vue-Electron?type=dev)
 
 ## Releases:
 
